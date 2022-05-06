@@ -1,0 +1,54 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform var(--transition-main);
+  transition-duration: 450ms;
+}
+.back-drop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.2) rotate(-90deg);
+}
+.modal-close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal-close-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  transition: color var(--transition-main);
+}
+.modal-close-btn:focus .modal-close-svg,
+.modal-close-btn:hover .modal-close-svg {
+  color: var(--primary-brand-color);
+}
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--dark-color);
+  margin-bottom: 12px;
+}

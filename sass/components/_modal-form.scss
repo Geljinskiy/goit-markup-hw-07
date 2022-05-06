@@ -1,0 +1,94 @@
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.modal-textarea-label {
+  margin-bottom: 20px;
+}
+.modal-label-text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.modal-contact-field {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  outline: none;
+  transition: border-color var(--transition-main);
+}
+.modal-contact-field::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-contact-field:focus,
+.modal-contact-field:hover {
+  border-color: var(--primary-brand-color);
+}
+.modal-contact-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  transition: fill var(--transition-main);
+}
+.modal-contact-field:focus + .modal-contact-svg,
+.modal-contact-field:hover + .modal-contact-svg {
+  fill: var(--primary-brand-color);
+}
+.modal-contact-area {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  resize: none;
+  height: 120px;
+}
+.modal-contact-wrapper {
+  width: 100%;
+  position: relative;
+}
+.policy-checkbox-wrapper {
+  margin-bottom: 30px;
+}
+.policy-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.policy-checkbox-label::before {
+  content: '';
+  display: inline-block;
+  outline-width: 3px;
+  margin-right: 7px;
+  background-image: url(../images/index/modal-window/checkbox-img.png);
+  background-repeat: no-repeat;
+  background-size: 11px 8px;
+  background-position: 50% 50%;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--dark-color);
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color var(--transition-main), border-color var(--transition-main);
+}
+.policy-checkbox:focus + .policy-checkbox-label::before {
+  border-color: var(--primary-brand-color);
+}
+.policy-checkbox:checked + .policy-checkbox-label::before {
+  background-color: var(--primary-brand-color);
+  border-color: var(--primary-brand-color);
+}
+.policy-link {
+  color: var(--primary-brand-color);
+  text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+.customers-list {
+  color: var(--tertiary-light-color);
+}
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color var(--transition-main);
+}
+.customer-link:focus,
+.customer-link:hover {
+  color: var(--primary-brand-color);
+}
+.customer-svg {
+  fill: currentColor;
+}
+.customers-item {
+  --card-item: 6;
+}
