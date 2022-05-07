@@ -12,8 +12,9 @@
   font-weight: 700;
   line-height: 1.88;
   transition: background-color var(--transition-main);
-}
-.main-button:hover,
-.main-button:focus {
-  background-color: #188ce8;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
